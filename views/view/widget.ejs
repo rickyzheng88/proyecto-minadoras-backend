@@ -1,5 +1,5 @@
 <div class="side__widget">
-    <div class="perfil">
+    <div id="perfil" class="perfil">
         <div class="perfil-left">
             <i class="ri-user-3-line perfil-icon"></i>
             <span class="perfil-name"><%- typeof fullname != 'undefined' ? fullname : "" %></span>
@@ -10,6 +10,9 @@
             <div class="perfil-dot"></div>
         </div>
     </div>
+    <a href='/logout' hidden id="logout" class="logout">
+        salir
+    </a>
     <div class="widget">
         <h2 class="widget-title">Minadoras</h2>
         <div class="widget-1">

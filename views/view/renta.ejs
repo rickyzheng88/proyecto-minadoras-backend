@@ -19,7 +19,11 @@
                 <span class="renta-span"><%= element.marca %></span>
                 <span class="renta-span"><%= element.modelo %></span>
                 <span class="renta-span"><%= element.codigo_minadora %></span>
-                <span class="renta-span"><%= element.fecha %></span>
+                <% let array = element.fecha.toString().split(" "); %>
+                <% let newArray = []; %>
+                <% for (let i = 0; i < 3; i++) {newArray.push(array[i+1]); } %>
+                <% let date = newArray.join("-"); %>
+                <span class="renta-span"><%= date %></span>
                 <span class="renta-span"><%= element.hora %></span>
                 <span class="renta-span"><%- element.consumo_acumulado + " KWh"%></span>
             </div>

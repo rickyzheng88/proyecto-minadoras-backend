@@ -1,5 +1,6 @@
-<form name="registerForm" class="form" action="" method="POST">
+<form name="registerForm" class="form" action="/register" method="POST">
     <%- typeof success != 'undefined' ? success : "" %>
+    <%- typeof error != 'undefined' ? error : "" %>
     <section class="form__section">
         <label class="form__label" for="user">Username</label>
         <input class="form__input" name="username" id="user" type="text" placeholder="ej: usuario123">
@@ -8,7 +9,7 @@
         <input class="form__input" name="password" id="pass" type="password" placeholder="Contraseña">
     </section>
     <section class="form__section">                        
-        <input class="form__input" name="com-password" id="com-pass" type="password" placeholder="Confirmar contraseña">
+        <input class="form__input" name="com_password" id="com-pass" type="password" placeholder="Confirmar contraseña">
     </section>
     <section class="form__section">
         <label class="form__label" for="name">Nombre Completo</label>

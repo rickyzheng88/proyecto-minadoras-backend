@@ -14,18 +14,27 @@
                     <div class="sec2-1">
                         <div class="flex flex-ai-c">
                             <span class="spec spec--temp"><%= element.temperatura %>°C</span>
+                            <% if (element.temperatura >= 65) { %>
                             <i class="ri-alert-fill sec2-icon"></i>
+                            <% } %>
                         </div>
                         <div class="flex">
                             <span class="spec spec--consum"><%= element.consumo_electrico %>KWh</span>
-                            <span class="spec spec--vel"><%= element.velocidad_procesamiento %>TH/s</span>
+                            <span class="spec spec--vel"><%= element.vel_actual %>TH/s</span>
                         </div>
                     </div>
-                    <div class="sec2-2">
+                    <div class="sec2-2 vel">
                         <div class="sec2-2-c"><%= element.ultima_hora_encendido %></div>
-                        <div class="sec2-2-c">
+                        <div class="sec2-2-c vel-d">
                             <span>Velocidad proces.</span>
                             <i class="ri-arrow-down-s-line sec2-2-icon"></i>
+                        </div>
+                        <div hidden class="vel-dropdown">
+                            <a href="<%- `/vel/${element.codigo}/${element.velocidad_procesamiento}/10` %>">10%</a>
+                            <a href="<%- `/vel/${element.codigo}/${element.velocidad_procesamiento}/25` %>">25%</a>
+                            <a href="<%- `/vel/${element.codigo}/${element.velocidad_procesamiento}/50` %>">50%</a>
+                            <a href="<%- `/vel/${element.codigo}/${element.velocidad_procesamiento}/75` %>">75%</a>
+                            <a href="<%- `/vel/${element.codigo}/${element.velocidad_procesamiento}/100` %>">100%</a>
                         </div>
                     </div>
                 </div>
