@@ -1,0 +1,67 @@
+.container__renta {
+    margin-top: 37px;
+    display: flex;
+    flex-direction: column;
+}
+
+.renta-total-container {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 180px;
+    font-weight: 700;
+}
+
+.renta-total-title {
+    font-size: 40px;
+}
+
+.renta-total {
+    font-size: 40px;
+    color: #0062ff;
+}
+
+.renta-table-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 40px 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.renta-table-head {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.renta-span {
+    width: 80px;
+}
+
+.renta-table-body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.renta-table-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.renta-table-row:hover {
+    background-color: #567dad2f;
+}

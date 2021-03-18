@@ -1,0 +1,16 @@
+<div class="side__menu">
+    <div class="side__title">
+        <span style="color: #4286f3;">D</span>omominer
+    </div>
+    <nav class="side__nav">
+        <a href="/home" class="side__item <%- typeof minadora != 'undefined' ? minadora : '' %>">
+            <i class="ri-home-2-line side__icon"></i><span class="side__text">Minadoras</span>
+        </a>
+        <a href="/renta" class="side__item <%- typeof renta != 'undefined' ? renta : '' %>">
+            <i class="ri-bank-card-2-line side__icon"></i><span class="side__text">Rentas</span>
+        </a>
+        <a href="/tasacambio" class="side__item <%- typeof tasacambio != 'undefined' ? tasacambio : '' %>">
+            <i class="ri-money-dollar-box-line side__icon"></i><span class="side__text">Tasa de cambio</span>
+        </a>
+    </nav>
+</div>

@@ -1,0 +1,11 @@
+<div class="container__tasacambio">
+    <% if (tasas) { %>
+    <% tasas.forEach(element => { %>
+    <a href="/change_tasa/<%= element.codigo %>" class="exchange-card <%- (tasaActiva[0].codigo_tasacambio == element.codigo ? 'exchange-card-active' : '') %> ">
+        <h3 class="exchange-title"><%= element.nombre %></h3>
+        <i class="ri-exchange-dollar-line exchange-icon"></i>
+        <span class="exchange-currency"><%- element.valor + " " + element.nombre %>/KWh</span>
+    </a>
+    <%  }); %>
+    <% } %>
+</div>

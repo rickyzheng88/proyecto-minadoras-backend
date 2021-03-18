@@ -1,0 +1,16 @@
+<form name="loginForm" class="form" action="/login" method="POST">
+    <%- typeof statement != 'undefined' ? statement : "" %>
+    <section class="form__section">
+        <label class="form__label" for="user">Username</label>
+        <input class="form__input" name="username" id="user" type="text" placeholder="ej: usuario123">
+    </section>
+    <section class="form__section">                        
+        <input class="form__input" name="password" id="pass" type="password" placeholder="Contraseña">
+    </section>
+    <section class="form__section flex flex-jc-sb flex-ai-c">
+        <input class="button" type="submit" value="Login">
+        <div>
+            No tienes cuenta? <a href="/register">create una!</a>
+        </div>
+    </section>
+</form>

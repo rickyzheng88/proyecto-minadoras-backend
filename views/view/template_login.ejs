@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Public Sans font style-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!--Poppins font style--> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Domominer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="login">
+        <div class="login__present login__padding">
+            <header class="login__header">
+                <h2 class="login__title">Revolución de minadoras</h2>
+                <div class="login__specs">
+                    <span>Monitorización</span>
+                    <span>Tiempo Real</span>
+                    <span>Sistema de advertencia</span>
+                </div>
+            </header>
+            <section class="login__footer">
+                <span class="login__footer--dl">D</span>omominer
+            </section>
+        </div>
+        <div class="login__container login__padding">
+            <div class="login__form">
+                <h2 class="login__form--title ">Bienvenidos a <span class="login__form--domominer">Domominer</span></h2>
+                
+                <section class="login__form--text">
+                    Hacemos fácil monitorear tus máquinas minadoras
+                </section>
+
+                <!-- Las dos lineas de separacion -->
+                <div class="login__form--sl">
+                    <div class="login__form--sl1 login__blue"></div>
+                    <div class="login__form--sl1"></div>
+                </div>
+
+                <%- include(page) %>
+            </div>
+        </div>
+    </div>
+    <div hidden>Frontend Desarrollado por Ricky Zheng</div>
+</body>
+</html>

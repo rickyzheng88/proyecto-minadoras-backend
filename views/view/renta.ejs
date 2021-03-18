@@ -1,0 +1,30 @@
+<div class="container__renta">
+    <div class="renta-total-container">
+        <span class="renta-total-title">Total a pagar</span>
+        <span class="renta-total"><%- totalRentas.valor + " " + totalRentas.nombre %></span>
+    </div>
+    <div class="renta-table-container">
+        <div class="renta-table-head">
+            <span class="renta-span">Nombre</span>
+            <span class="renta-span">Modelo</span>
+            <span class="renta-span">Código</span>
+            <span class="renta-span">Fecha</span>
+            <span class="renta-span">Hora</span>
+            <span class="renta-span">Consumo</span>
+        </div>
+        <div class="renta-table-body">
+            <% if (rentas) { %>
+            <% rentas.forEach(element => { %>
+            <div class="renta-table-row">
+                <span class="renta-span"><%= element.marca %></span>
+                <span class="renta-span"><%= element.modelo %></span>
+                <span class="renta-span"><%= element.codigo_minadora %></span>
+                <span class="renta-span"><%= element.fecha %></span>
+                <span class="renta-span"><%= element.hora %></span>
+                <span class="renta-span"><%- element.consumo_acumulado + " KWh"%></span>
+            </div>
+            <% }); %>
+            <% } %>
+        </div>
+    </div>
+</div>

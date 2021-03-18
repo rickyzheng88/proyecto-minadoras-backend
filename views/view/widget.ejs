@@ -1,0 +1,32 @@
+<div class="side__widget">
+    <div class="perfil">
+        <div class="perfil-left">
+            <i class="ri-user-3-line perfil-icon"></i>
+            <span class="perfil-name"><%- typeof fullname != 'undefined' ? fullname : "" %></span>
+        </div>                    
+        <div class="perfil-right">
+            <div class="perfil-dot"></div>
+            <div class="perfil-dot"></div>
+            <div class="perfil-dot"></div>
+        </div>
+    </div>
+    <div class="widget">
+        <h2 class="widget-title">Minadoras</h2>
+        <div class="widget-1">
+            <h3>
+                Total
+            </h3>
+            <div class="widget-content widget-content-blue">
+                <%- typeof minadoras != 'undefined' ? minadoras : "" %>
+            </div>
+        </div>
+        <div class="widget-1">
+            <h3>
+                Activos
+            </h3>
+            <div class="widget-content">
+                <%-  typeof minadorasActivas != 'undefined' ? minadorasActivas : ""  %>
+            </div>
+        </div>
+    </div>
+</div>

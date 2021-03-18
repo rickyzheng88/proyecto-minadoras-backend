@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domominer - Home</title>
+    <!--Poppins font style--> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../fonts/remixicon.css">
+    <link rel="stylesheet" href="../css/renta.css">
+    <link rel="stylesheet" href="../css/tasa_cambio.css">
+</head>
+<body>
+    <div class="container--home">
+        <%- include('./side_menu') %>
+        <section class="main__section flex flex-jc-sb">
+            <div class="panel">
+                <div class="panel__title flex flex-jc-sb flex-ai-c">
+                    <h2 class="panel__h2"><%= active %></h2>
+                    <span>Bienvenido de vuelta, <b><%- typeof fullname != 'undefined' ? fullname : "" %></b></span>
+                </div>
+                <!--Contenido aqui-->
+                <%- include(page); %>
+            </div>
+            
+            <!-- Side Widget --><%- include('./widget') %>
+        </section>
+    </div>
+</body>
+</html>

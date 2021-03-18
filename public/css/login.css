@@ -1,0 +1,143 @@
+body {
+    background-color: #dcdadd;
+}
+
+.login {
+    width: 100%;
+    min-width: 1000px;
+    min-height: 600px;
+    height: 100%;
+    display: flex;
+}
+
+.login__present {
+    background: linear-gradient(0.40turn, #1a3665, #020307);
+    flex-grow: 0.3;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.login__footer {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.login__footer--dl {
+    color: #4286f3;
+    font-size: 20px;
+}
+
+.login__title {
+    font-size: 35px;
+    font-weight: 700;
+    color: #fff;
+    width: 255px;
+    position: relative;
+}
+
+.login__title::before {
+    content: 'futura';
+    position: absolute;
+    top: -50px;
+    color: #27426f;
+}
+
+.login__specs {
+    margin-top: 25px;
+    width: 400px;
+    color: #4583f4;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login__container {
+    background-color: #fff;
+    flex-grow: 1;
+    display: flex;
+    overflow: scroll;
+}
+
+.login__form {
+    color: #525d6f;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    min-width: 400px;
+    width: 100%;
+}
+
+.login__form--domominer {
+    color: #4583f4;
+}
+
+.login__form--title {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.login__form--text {
+    margin-top: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    width: 300px;
+}
+
+.login__form--sl {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-top: 40px;
+}
+
+.login__form--sl1 {
+    width: 145px;
+    height: 5px;
+    background-color: #e4e5e9;
+    border-radius: 3px;
+}
+
+.login__blue {
+    background-color: #4583f4;
+}
+
+.login__padding {
+    padding-right: 4rem;
+    padding-left: 4rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.form {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.form__label {
+    display: block;
+    color: #4583f4;
+}
+
+.form__section {
+    margin-top: 50px;
+}
+
+.form__input {
+    width: 100%;
+    padding: 15px 0 5px 0;
+    border: none;
+    border-bottom: 2px solid #79a6fa;
+    outline: none;
+    font-size: 16px;
+    color: #525d6f;
+    font-family: "Poppins", sans-serif;
+    transition: border 0.3s ;
+}
+
+.form__input:focus {
+    border-bottom-color: #075bf8;
+}

@@ -1,0 +1,40 @@
+<div class="machine__container">
+    <% if (miner) { miner.forEach(element => { %>
+        <div class="machine">
+            <div class="left-side">
+                <i class="ri-computer-line machine__icon"></i>
+                <div class="left-sec1">
+                    <div>
+                        <h2 class="machine__name"><%= element.marca %></h2>
+                        <span class="machine__model"><%= element.modelo %></span>
+                    </div>                                
+                    <span class="machine__cod">Product-ID: <%= element.codigo %></span>
+                </div>
+                <div class="left-sec2">
+                    <div class="sec2-1">
+                        <div class="flex flex-ai-c">
+                            <span class="spec spec--temp"><%= element.temperatura %>°C</span>
+                            <i class="ri-alert-fill sec2-icon"></i>
+                        </div>
+                        <div class="flex">
+                            <span class="spec spec--consum"><%= element.consumo_electrico %>KWh</span>
+                            <span class="spec spec--vel"><%= element.velocidad_procesamiento %>TH/s</span>
+                        </div>
+                    </div>
+                    <div class="sec2-2">
+                        <div class="sec2-2-c"><%= element.ultima_hora_encendido %></div>
+                        <div class="sec2-2-c">
+                            <span>Velocidad proces.</span>
+                            <i class="ri-arrow-down-s-line sec2-2-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-side">
+                <span>Estado de encendido</span>
+                <span class="estado"><%- (element.estado_encendido) ? 'endendido' : 'apagado' %></span>
+                <a href="<%- '/toggle/' + element.codigo %>" class="button button-estado">encender/apagar</a>
+            </div>
+        </div>
+        <% }); } %>
+</div>
